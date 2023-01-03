@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mixitup Plugin</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+
+    <style>
+      .image_big {
+        height: 462px;
+      }
+      .image_small {
+        height: 280px;
+      }
+      .image a img {
+        height: 100%;
+        width: 100%;
+      }
+      ul {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+      }
+      ul li {
+        margin: 0px 10px;
+        cursor: pointer;
+      }
+      .portfolio_item {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+      }
+      img {
+        border-radius: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <ul>
+            <li type="button" data-filter="all">All</li>
+            <li type="button" data-filter=".youtube">Youtube</li>
+            <li type="button" data-filter=".vimeo">Vimeo</li>
+            <li type="button" data-filter=".cloud">Cloud</li>
+            <li type="button" data-filter=".popup">Popup</li>
+            <li type="button" data-filter=".detail">Detail</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- ---------------- -->
+
+    <div class="container">
+      <div class="row portfolio_filter">
+        <div class="col-lg-4">
+          <div class="portfolio_item">
+            <div class="image image_big mix youtube">
+              <a href="#">
+                <img class="img-fluid" src="img/p-1.jpg" alt="" />
+              </a>
+            </div>
+            <div class="image image_small mix vimeo">
+              <a href="#">
+                <img class="img-fluid" src="img/p-2.jpg" alt="" />
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4">
+          <div class="portfolio_item">
+            <div class="image image_small mix detail">
+              <a href="#">
+                <img class="img-fluid" src="img/p-3.jpg" alt="" />
+              </a>
+            </div>
+            <div class="image image_big mix cloud">
+              <a href="#">
+                <img class="img-fluid" src="img/p-4.jpg" alt="" />
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4">
+          <div class="portfolio_item">
+            <div class="image image_big mix popup">
+              <a href="#">
+                <img class="img-fluid" src="img/p-5.jpg" alt="" />
+              </a>
+            </div>
+            <div class="image image_small mix detail youtube">
+              <a href="#">
+                <img class="img-fluid" src="img/p-6.jpg" alt="" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- jquery version  -->
+    <script src="JS/jquery-1.12.4.min.js"></script>
+    <!-- bootstrap js  -->
+    <script src="JS/bootstrap.bundle.min.js"></script>
+    <!-- mixitup plugin  -->
+    <script src="JS/mixitup.min.js"></script>
+    <!-- my js  -->
+    <script src="JS/grid.js"></script>
+  </body>
+</html>
