@@ -187,6 +187,9 @@ navbar start
   background-color: var(--black_bg);
   height: 60px;
 }
+#my_navbar .container .logo button{
+  margin-right: 20px;
+}
 #my_navbar .main-menu li {
   margin: 0px 8px;
 }
@@ -209,6 +212,21 @@ navbar start
   color: var(--white_color);
   font-size: 16px;
   font-family: var(--font_family_jost);
+}
+.offcanvas{
+  background-color: var(--black_bg);
+}
+.offcanvas-body ul{
+  text-align: center;
+}
+.offcanvas-body ul li a{
+  color: var(--orange_color);
+}
+.offcanvas-body ul li a:hover{
+  color: white;
+}
+.offcanvas-body .download_cv a{
+  margin: auto;
 }
 /* ====================================
 navbar end

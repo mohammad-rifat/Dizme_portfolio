@@ -1,0 +1,143 @@
+@media screen and (max-width: 991px) {
+  #my_navbar {
+    position: fixed;
+    background-color: #2b2d33;
+    padding: 0px;
+  }
+  .navbar-brand {
+    margin-right: 0px !important;
+  }
+  .animation_close_btn {
+    width: 30px;
+    border-radius: 5px;
+    padding: 3px;
+    background-color: transparent;
+    border: none;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+  }
+  .animation_close_btn:hover {
+    background-color: transparent;
+  }
+  .animation_close_btn:focus {
+    background: transparent;
+    box-shadow: none;
+    border: none;
+    outline: none;
+  }
+  .animation_close_btn span {
+    width: 100%;
+    height: 2.5px;
+    background-color: white;
+    border-radius: 2px;
+    transition: all linear 0.1s;
+  }
+  .animation_close_btn span:nth-child(2) {
+    height: 2px;
+  }
+  .animation_close_btn span.rotate_1 {
+    transform: rotate(45deg) translateY(14px);
+  }
+  .animation_close_btn span.hide {
+    transform: translateX(-15px);
+    opacity: 0;
+    visibility: hidden;
+  }
+  .animation_close_btn span.rotate_2 {
+    transform: rotate(-45deg) translateY(-14px);
+  }
+  /* banner start  */
+  #banner .banner_row {
+    flex-direction: column-reverse;
+  }
+  /* banner end */
+  #banner .banner-container .row div .image {
+    width: 195px;
+    height: 260px;
+    margin: auto;
+    position: relative;
+  }
+  #banner .banner-container .row div .image .icons img.illustrator {
+    display: none;
+  }
+  #banner .banner-container .row div .image .icons img.figma {
+    display: none;
+  }
+  #banner .banner-container .row div .image .icons img.photoshop {
+    display: none;
+  }
+  .intro {
+    text-align: center;
+    margin-top: 20px;
+  }
+  #banner .banner-container .row h3.white-color {
+    font-size: 45px;
+    font-weight: 500;
+  }
+  #banner .banner-container .row h3.orange-color {
+    font-size: 20px;
+  }
+  #banner .banner-container .row p {
+    font-size: 18px;
+    line-height: 1.2;
+  }
+  #banner .banner-container .row ul {
+    margin-left: -17px;
+  }
+  /* .home_down_container start  */
+  .home_down_container {
+    margin-top: 79px;
+  }
+  .home_down_container .container .row .col-lg-4 .item .image {
+    width: 80px;
+  }
+  .home_down_container .container .row .col-lg-4 .item .image svg {
+    width: 35px;
+    height: 35px;
+  }
+  .home_down_container .container .row .col-lg-4 .item .text p {
+    font-size: 15px;
+    line-height: 26px;
+  }
+  .home_down_container .container .row .col-lg-4 .item .text h3.heading {
+    padding-bottom: 10px;
+  }
+  #banner .item{
+    margin-bottom: 45px;
+  }
+  /* .home_down_container end */
+}
+/* ------------------ */
+@media screen and (max-width: 575.98px) {
+  #my_navbar {
+    position: fixed;
+    padding: 3px 0px;
+  }
+  .navbar-brand {
+    margin-right: 0px !important;
+  }
+}
+
+/* sm  */
+@media (min-width:576px) and (max-width:767.98px){
+
+}
+/* md  */
+@media (min-width:768px) and (max-width:991.98px){
+
+}
+/* lg  */
+@media (min-width:992px) and (max-width:1199.98px){
+
+}
+/* xl  */
+@media (min-width:1200px) and (max-width:1399.98px){
+
+}
+/* xxl  */
+@media (min-width:1400px) {
+
+}

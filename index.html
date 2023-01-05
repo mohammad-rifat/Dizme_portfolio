@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="img/logo_icon.png" type="icon/image" />
     <title>Dizme | portfolio</title>
     <!-- font awesome CDN  -->
     <link
@@ -28,24 +29,25 @@
     <link rel="stylesheet" href="css/slick.css" />
     <!--  my css file  -->
     <link rel="stylesheet" href="css/style.css" />
+    <!-- responsive css file  -->
+    <link rel="stylesheet" href="css/response.css" />
   </head>
   <body>
-   
-     
-    
     <!-- =============================
         navbar start
     ============================= -->
     <nav class="navbar navbar-expand-lg" id="my_navbar">
       <div class="container">
         <div class="logo">
+          
           <a class="navbar-brand" href="#">
             <img class="img-fluid w-50" src="img/logo.png" alt="" />
           </a>
+
           <!-- logo end  -->
         </div>
         <button
-          class="navbar-toggler"
+          class="navbar-toggler d-none"
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbarSupportedContent"
@@ -55,6 +57,20 @@
         >
           <span class="navbar-toggler-icon"></span>
         </button>
+
+        <button
+            class="animation_close_btn btn btn-primary d-lg-none"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasScrolling"
+            aria-controls="offcanvasScrolling"
+          >
+            <!-- <i class="fa-solid fa-bars"></i> -->
+            <span class="line_1"></span>
+            <span class="line_2"></span>
+            <span class="line_3"></span>
+          </button>
+
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0 main-menu">
             <li class="nav-item">
@@ -88,13 +104,102 @@
     ================================= -->
 
     <!-- ==================================
+        sidebar start
+    ================================= -->
+    <div
+      class="offcanvas offcanvas-start"
+      data-bs-scroll="true"
+      data-bs-backdrop="false"
+      tabindex="-1"
+      id="offcanvasScrolling"
+      aria-labelledby="offcanvasScrollingLabel"
+    >
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasScrollingLabel">
+          <a href="index.html">
+            <img class="img-fluid" src="img/logo_icon.png" alt="" />
+          </a>
+        </h5>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="offcanvas-body">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 main-menu">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#portfolio">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#service">Service</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#blog">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+        <div class="download_cv">
+          <a class="common_button_2" href="#"> <span>Download CV</span> </a>
+        </div>
+      </div>
+    </div>
+    <!-- ==================================
+        sidebar end
+    ================================= -->
+
+    <!-- ==================================
         banner start
     ============================ -->
     <section id="banner">
       <div class="bg">
         <div class="container">
           <div class="banner-container">
-            <div class="row align-items-center">
+            <div class="row align-items-center banner_row">
+              <div class="col-lg-12 d-lg-none">
+                <div class="mouse d-flex justify-content-center">
+                  <div class="mouse_icon">
+                    <a href="#">
+                      <svg
+                        width="26px"
+                        height="100%"
+                        viewBox="0 0 247 390"
+                        version="1.1"
+                        xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        style="
+                          fill-rule: evenodd;
+                          clip-rule: evenodd;
+                          stroke-linecap: round;
+                          stroke-linejoin: round;
+                          stroke-miterlimit: 1.5;
+                        "
+                      >
+                        <path
+                          id="wheel"
+                          d="M123.359,79.775l0,72.843"
+                          style="fill: none; stroke: #fff; stroke-width: 20px"
+                        ></path>
+                        <path
+                          id="mouse"
+                          d="M236.717,123.359c0,-62.565 -50.794,-113.359 -113.358,-113.359c-62.565,0 -113.359,50.794 -113.359,113.359l0,143.237c0,62.565 50.794,113.359 113.359,113.359c62.564,0 113.358,-50.794 113.358,-113.359l0,-143.237Z"
+                          style="fill: none; stroke: #fff; stroke-width: 20px"
+                        ></path>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
               <div class="col-lg-6">
                 <div class="intro">
                   <h3 class="orange-color">Hello, I'm</h3>
@@ -166,7 +271,7 @@
                 </div>
               </div>
 
-              <div class="col-lg-12">
+              <div class="col-lg-12 d-none d-lg-block">
                 <div class="mouse d-flex justify-content-center">
                   <div class="mouse_icon">
                     <a href="#">
@@ -1646,9 +1751,14 @@
           <div class="row g-0">
             <div class="col-lg-3">
               <div class="brand_item">
-                <a href="#" data-aos="fade-right"
-                data-aos-offset="300"
-                data-aos-easing="ease-in-sine"     data-aos-delay="300"  data-aos-duration="1200">
+                <a
+                  href="#"
+                  data-aos="fade-right"
+                  data-aos-offset="300"
+                  data-aos-easing="ease-in-sine"
+                  data-aos-delay="300"
+                  data-aos-duration="1200"
+                >
                   <img
                     src="https://marketifythemes.net/html/dizme/img/partners/light/1.png"
                     alt=""
@@ -1658,9 +1768,14 @@
             </div>
             <div class="col-lg-3">
               <div class="brand_item">
-                <a href="#" data-aos="fade-right"
-                data-aos-offset="300"
-                data-aos-easing="ease-in-sine"     data-aos-delay="500" data-aos-duration="1200">
+                <a
+                  href="#"
+                  data-aos="fade-right"
+                  data-aos-offset="300"
+                  data-aos-easing="ease-in-sine"
+                  data-aos-delay="500"
+                  data-aos-duration="1200"
+                >
                   <img
                     src="https://marketifythemes.net/html/dizme/img/partners/light/2.png"
                     alt=""
@@ -1670,9 +1785,14 @@
             </div>
             <div class="col-lg-3">
               <div class="brand_item">
-                <a href="#" data-aos="fade-right"
-                data-aos-offset="300"
-                data-aos-easing="ease-in-sine"     data-aos-delay="700" data-aos-duration="1200">
+                <a
+                  href="#"
+                  data-aos="fade-right"
+                  data-aos-offset="300"
+                  data-aos-easing="ease-in-sine"
+                  data-aos-delay="700"
+                  data-aos-duration="1200"
+                >
                   <img
                     src="https://marketifythemes.net/html/dizme/img/partners/light/3.png"
                     alt=""
@@ -1682,10 +1802,14 @@
             </div>
             <div class="col-lg-3">
               <div class="brand_item border-end-0">
-                <a href="#" data-aos="fade-right"
-                data-aos-offset="300"
-                data-aos-easing="ease-in-sine"     data-aos-delay="900"
-                data-aos-duration="1200">
+                <a
+                  href="#"
+                  data-aos="fade-right"
+                  data-aos-offset="300"
+                  data-aos-easing="ease-in-sine"
+                  data-aos-delay="900"
+                  data-aos-duration="1200"
+                >
                   <img
                     src="	https://marketifythemes.net/html/dizme/img/partners/light/4.png"
                     alt=""
@@ -1695,10 +1819,14 @@
             </div>
             <div class="col-lg-3">
               <div class="brand_item border-bottom-0">
-                <a href="#" data-aos="fade-right"
-                data-aos-offset="300"
-                data-aos-easing="ease-in-sine"     data-aos-delay="1100"
-                data-aos-duration="1200">
+                <a
+                  href="#"
+                  data-aos="fade-right"
+                  data-aos-offset="300"
+                  data-aos-easing="ease-in-sine"
+                  data-aos-delay="1100"
+                  data-aos-duration="1200"
+                >
                   <img
                     src="https://marketifythemes.net/html/dizme/img/partners/light/5.png"
                     alt=""
@@ -1708,9 +1836,14 @@
             </div>
             <div class="col-lg-3">
               <div class="brand_item border-bottom-0">
-                <a href="#" data-aos="fade-right"
-                data-aos-offset="300"
-                data-aos-easing="ease-in-sine"     data-aos-delay="1300" data-aos-duration="1200">
+                <a
+                  href="#"
+                  data-aos="fade-right"
+                  data-aos-offset="300"
+                  data-aos-easing="ease-in-sine"
+                  data-aos-delay="1300"
+                  data-aos-duration="1200"
+                >
                   <img
                     src="https://marketifythemes.net/html/dizme/img/partners/light/6.png"
                     alt=""
@@ -1720,9 +1853,14 @@
             </div>
             <div class="col-lg-3">
               <div class="brand_item border-bottom-0">
-                <a href="#" data-aos="fade-right"
-                data-aos-offset="300"
-                data-aos-easing="ease-in-sine"     data-aos-delay="1500" data-aos-duration="1200">
+                <a
+                  href="#"
+                  data-aos="fade-right"
+                  data-aos-offset="300"
+                  data-aos-easing="ease-in-sine"
+                  data-aos-delay="1500"
+                  data-aos-duration="1200"
+                >
                   <img
                     src="https://marketifythemes.net/html/dizme/img/partners/light/7.png"
                     alt=""
@@ -1732,9 +1870,15 @@
             </div>
             <div class="col-lg-3">
               <div class="brand_item border-bottom-0 border-end-0">
-                <a href="#" data-aos="fade-right"
-                data-aos-offset="300"
-                data-aos-easing="ease-in-sine"     data-aos-delay="1700"  data-aos-duration="1200">                  <img
+                <a
+                  href="#"
+                  data-aos="fade-right"
+                  data-aos-offset="300"
+                  data-aos-easing="ease-in-sine"
+                  data-aos-delay="1700"
+                  data-aos-duration="1200"
+                >
+                  <img
                     src="https://marketifythemes.net/html/dizme/img/partners/light/8.png"
                     alt=""
                   />
@@ -2304,8 +2448,6 @@
         mouse end
     ================================= -->
 
-    
-    
     <!-- jquery verison  -->
     <script src="js/jquery-1.12.4.min.js"></script>
     <!-- N: always try to keep jquery file at top of other files  -->

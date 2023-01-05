@@ -13,6 +13,19 @@ window.addEventListener("scroll", function () {
 $(function () {
   "use strict";
 
+  // side bar button start
+  let animation_close_btn = document.querySelector(".animation_close_btn");
+  let line_1 = document.querySelector(".line_1");
+  let line_2 = document.querySelector(".line_2");
+  let line_3 = document.querySelector(".line_3");
+
+  animation_close_btn.addEventListener("click", function () {
+    line_1.classList.toggle("rotate_1");
+    line_2.classList.toggle("hide");
+    line_3.classList.toggle("rotate_2");
+  });
+  // side bar button end
+
   $(".counter").counterUp({
     delay: 10,
     time: 1000,
@@ -131,5 +144,3 @@ $(document).ready(function () {
 
 //aos plugin
 AOS.init();
-
-
